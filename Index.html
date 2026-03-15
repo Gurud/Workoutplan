@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>3 Week Fitness Plan</title>
+
+<style>
+
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#4b0f1a,#7b1e2b,#3a0a12);
+color:white;
+padding:20px;
+}
+
+/* HEADER */
+
+header{
+text-align:center;
+margin-bottom:30px;
+}
+
+header img{
+width:120px;
+border-radius:10px;
+margin-bottom:10px;
+}
+
+header h1{
+font-size:2.2rem;
+}
+
+header p{
+opacity:0.85;
+}
+
+/* GRID */
+
+.container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:20px;
+}
+
+/* CARDS */
+
+.card{
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(10px);
+border-radius:12px;
+padding:20px;
+box-shadow:0 10px 25px rgba(0,0,0,0.4);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-6px);
+}
+
+.card img{
+width:100%;
+border-radius:8px;
+margin-bottom:10px;
+}
+
+/* WEEK TITLE */
+
+.week-title{
+font-size:1.4rem;
+margin-bottom:15px;
+color:#ffb3b3;
+}
+
+/* DAY */
+
+.day{
+margin-bottom:12px;
+padding:10px;
+background:rgba(255,255,255,0.06);
+border-radius:8px;
+}
+
+.day h4{
+margin-bottom:6px;
+}
+
+/* EXERCISE */
+
+.exercise{
+font-size:0.9rem;
+margin-left:15px;
+opacity:0.9;
+}
+
+.exercise li{
+margin:3px 0;
+}
+
+.complete{
+margin-top:8px;
+}
+
+/* BUTTON */
+
+button{
+margin-top:20px;
+width:100%;
+padding:12px;
+border:none;
+border-radius:8px;
+background:#ff4d6d;
+color:white;
+font-weight:bold;
+cursor:pointer;
+}
+
+button:hover{
+background:#ff2d55;
+}
+
+/* PROGRESS */
+
+.progress{
+margin-top:25px;
+text-align:center;
+}
+
+.progress-bar{
+height:12px;
+background:#3d1a1a;
+border-radius:10px;
+overflow:hidden;
+margin-top:10px;
+}
+
+.progress-fill{
+height:100%;
+width:0%;
+background:#ff4d6d;
+transition:0.4s;
+}
+
+footer{
+text-align:center;
+margin-top:30px;
+opacity:0.7;
+font-size:0.8rem;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<img src="https://images.unsplash.com/photo-1599058917765-a780eda07a3e">
+
+<h1>🏋️ 3 Week Fitness Plan</h1>
+<p>Weight Loss + Strong Knees & Hamstrings</p>
+
+</header>
+
+<div class="container">
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd">
+
+<div class="week-title">Week 1 – Activation</div>
+
+<div class="day">
+<h4>Day 1</h4>
+<ul class="exercise">
+<li>10 min walking</li>
+<li>Glute bridges – 3×12</li>
+<li>Hamstring stretch – 20 sec</li>
+<li>Bodyweight squats – 3×10</li>
+</ul>
+<input type="checkbox" class="complete">
+</div>
+
+<div class="day">
+<h4>Day 2</h4>
+<ul class="exercise">
+<li>15 min brisk walk</li>
+<li>Step ups – 3×10</li>
+<li>Standing hamstring curl – 3×12</li>
+<li>Wall sit – 20 sec</li>
+</ul>
+<input type="checkbox" class="complete">
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1594737625785-a6cbdabd333c">
+
+<div class="week-title">Week 2 – Strength</div>
+
+<div class="day">
+<h4>Day 1</h4>
+<ul class="exercise">
+<li>20 min brisk walk</li>
+<li>Glute bridge – 4×12</li>
+<li>Step ups – 3×12</li>
+<li>Wall sit – 30 sec</li>
+</ul>
+<input type="checkbox" class="complete">
+</div>
+
+<div class="day">
+<h4>Day 2</h4>
+<ul class="exercise">
+<li>Cycling – 15 min</li>
+<li>Hamstring curls – 4×12</li>
+<li>Squats – 3×12</li>
+</ul>
+<input type="checkbox" class="complete">
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1571019613914-85f342c1d4b6">
+
+<div class="week-title">Week 3 – Fat Burn</div>
+
+<div class="day">
+<h4>Day 1</h4>
+<ul class="exercise">
+<li>25 min fast walking</li>
+<li>Glute bridges – 4×15</li>
+<li>Step ups – 3×15</li>
+</ul>
+<input type="checkbox" class="complete">
+</div>
+
+<div class="day">
+<h4>Day 2</h4>
+<ul class="exercise">
+<li>30 min brisk walk</li>
+<li>Squats – 4×12</li>
+<li>Wall sit – 40 sec</li>
+</ul>
+<input type="checkbox" class="complete">
+</div>
+
+</div>
+
+</div>
+
+<div class="progress">
+
+<h3>Progress</h3>
+
+<div class="progress-bar">
+<div class="progress-fill" id="progressFill"></div>
+</div>
+
+</div>
+
+<button onclick="updateProgress()">Update Progress</button>
+
+<footer>
+3 Week Knee Strength & Weight Loss Program
+</footer>
+
+<script>
+
+function updateProgress(){
+
+let checkboxes=document.querySelectorAll('.complete');
+let total=checkboxes.length;
+let completed=0;
+
+checkboxes.forEach(box=>{
+if(box.checked) completed++;
+});
+
+let percent=(completed/total)*100;
+
+document.getElementById("progressFill").style.width=percent+"%";
+
+}
+
+</script>
+
+</body>
+</html>
